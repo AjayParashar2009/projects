@@ -22,12 +22,15 @@ function playPause() {
     }
 }
 
-if(song.play()){ 
-setInterval(() => {
-    // progress.value = song.currentTime;
-}, 500)
-}
+song.addEventListener('play',()=>{
+    setInterval(()=>{
+        progress.value = song.currentTime
+    },500)
+})
 
+song.addEventListener('pause',()=>{
+    clearInterval()
+})
 
 progress.onchange = function () {
     song.play()
