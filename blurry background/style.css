@@ -19,7 +19,9 @@ body{
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background-image: url('vestrahorn-mountains-stokksnes-iceland.jpg');
+    /* background-image: url('vestrahorn-mountains-stokksnes-iceland.jpg'); */
+    /* background-image: url('https://picsum.photos/1920/1080'); */
+    background-image: url('https://source.unsplash.com/1920X1080/?galaxyz');
     background-size: cover;
     background-position:center;
     filter: blur(30px);
@@ -30,4 +32,20 @@ body{
 .count{
     font-size: 50px;
     color: #fff;
+}
+
+
+@media (max-width:768px) {
+    .bg{
+        height: 100vh;
+        width: 100%;
+        background-image: url('https://picsum.photos/1080/1920');
+    }
+}
+@media (max-width:320px) {
+    .bg{
+        height: 100vh;
+        width: 100%;
+        background-image: url('https://picsum.photos/1920/320');
+    }
 }

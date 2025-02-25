@@ -1,7 +1,6 @@
 let bg = document.querySelector('.bg')
 let count = document.querySelector('.count')
 
-
 let value = 0
 
 
